@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BGMI Tournament</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0d0a1a;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .center { text-align: center; }
+
+    .tag {
+      display: inline-block;
+      background: #3a2080;
+      border: 1px solid #7c5ce1;
+      padding: 5px 16px;
+      border-radius: 20px;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #c0aff0;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 10px 0 0;
+      letter-spacing: 5px;
+    }
+
+    .sub {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: #c0aff0;
+    }
+
+    .org {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: #7c5ce1;
+      margin-top: 6px;
+    }
+
+    .line {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #7c5ce1, transparent);
+      margin: 15px 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .box {
+      padding: 14px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .filled {
+      background: #7c5ce1;
+    }
+
+    .outlined {
+      border: 2px solid #7c5ce1;
+    }
+
+    .small {
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #c0aff0;
+    }
+
+    .big {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #c0aff0;
+      margin: 20px 0 10px;
+    }
+
+    .format {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border: 1px solid #3a2080;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .format div {
+      padding: 12px;
+      text-align: center;
+      border-right: 1px solid #3a2080;
+    }
+
+    .format div:last-child {
+      border-right: none;
+    }
+
+    .stages {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .stage {
+      border: 1px solid #7c5ce1;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th {
+      background: #7c5ce1;
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    td {
+      padding: 8px;
+      border-bottom: 1px solid #1e1040;
+      font-size: 12px;
+    }
+
+    td:last-child {
+      text-align: right;
+    }
+
+    .footer {
+      background: #7c5ce1;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 15px;
+      text-align: center;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .discord {
+      background: linear-gradient(135deg, #5865F2, #7c5ce1);
+    }
+
+    .youtube {
+      background: linear-gradient(135deg, #ff0000, #ff4d4d);
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 44px; }
+      .big { font-size: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="center">
+    <div class="tag">PRIVATE TOURNEY</div>
+    <h1>BGMI</h1>
+    <div class="sub">TOURNAMENT</div>
+    <div class="org">ORGANIZED BY LUMA</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="box filled">
+      <div class="small">ENTRY FEE</div>
+      <div class="big">FREE</div>
+    </div>
+
+    <div class="box outlined">
+      <div class="small">PRIZE POOL</div>
+      <div class="big">&#8377;2,000</div>
+    </div>
+  </div>
+
+  <div class="section-title">TOURNAMENT FORMAT</div>
+
+  <div class="format">
+    <div><div class="big">80</div><div class="small">PLAYERS</div></div>
+    <div><div class="big">20</div><div class="small">TEAMS</div></div>
+    <div><div class="big">BR</div><div class="small">BATTLE ROYALE</div></div>
+  </div>
+
+  <div class="section-title">STAGES</div>
+
+  <div class="stages">
+    <div class="stage">
+      <div class="small">QUALIFIERS</div>
+      <div class="big">MAY 01</div>
+      <div class="small">
+        2 Rooms<br>
+        20 Teams / Room<br>
+        2 Matches
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="small">FINALS</div>
+      <div class="big">MAY 02</div>
+      <div class="small">
+        1 Room<br>
+        20 Teams<br>
+        1 Match
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">POINT SYSTEM</div>
+
+  <table>
+    <tr><th>PLACEMENT</th><th>POINTS</th></tr>
+    <tr><td>1st (WWCD)</td><td>10</td></tr>
+    <tr><td>2nd</td><td>6</td></tr>
+    <tr><td>3rd</td><td>5</td></tr>
+    <tr><td>4th</td><td>4</td></tr>
+    <tr><td>5th</td><td>3</td></tr>
+    <tr><td>6th</td><td>2</td></tr>
+    <tr><td>7-8</td><td>1</td></tr>
+    <tr><td>9-16</td><td>0</td></tr>
+    <tr><td><b>Each Kill</b></td><td><b>1</b></td></tr>
+  </table>
+
+  <div class="section-title">PRIZE</div>
+
+  <div class="grid-2">
+    <div class="box outlined">
+      <div class="small">1ST</div>
+      <div class="big">&#8377;1,000</div>
+    </div>
+
+    <div class="box outlined">
+      <div class="small">2ND</div>
+      <div class="big">&#8377;500</div>
+    </div>
+
+    <div class="box outlined">
+      <div class="small">3RD</div>
+      <div class="big">&#8377;400</div>
+    </div>
+
+    <div class="box outlined">
+      <div class="small">MVP</div>
+      <div class="big">&#8377;100</div>
+    </div>
+  </div>
+
+  <a href="https://discord.gg/UZWQhTX94B" target="_blank" class="btn discord">
+    JOIN DISCORD & REGISTER
+  </a>
+
+  <a href="https://www.youtube.com/@ICEFOXGAMINGYT/streams" target="_blank" class="btn youtube">
+    WATCH LIVE STREAM
+  </a>
+
+  <div class="footer">
+    <div class="small">NOT AFFILIATED WITH KRAFTON</div>
+    <div><b>GOOD LUCK • PLAY FAIR</b></div>
+  </div>
+
+</div>
+
+</body>
+</html>
